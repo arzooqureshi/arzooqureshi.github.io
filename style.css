@@ -1,17 +1,19 @@
 @font-face {
-    font-family:'Gilroy';
+    font-family: 'Gilroy';
+    src: url('font/Gilroy-Regular.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
-    font-family:'Gilroy Bold';
+    font-family: 'Gilroy Bold';
+    src: url('font/Gilroy-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 body{
     background-color: #222;
-    font-family: 'cursive';
+    font-family: 'Gilroy';
 }
 
 *{
@@ -54,7 +56,7 @@ input[type=number] {
 .budget-container .app-title h3{
     color: #FFF;
 }
-.budget-container .app-title a b{
+.budget-container .app-title h3 b{
     font-family: 'Gilroy Bold';
 }
 
@@ -105,25 +107,13 @@ input[type=number] {
     font-family: 'Gilroy Bold';
 }
 
-.budget-header .account .income .income-total small{
-    color: #FFF;
-    font-family: 'Gilroy Bold';
-    font-size: 1rem;
-}
-
 .budget-header .account .outcome .title{
     color: #FFF;
     opacity: 0.5;
 }
 .budget-header .account .outcome .outcome-total{
-    color: #ef0b0b;
+    color: #f0624d;
     font-family: 'Gilroy Bold';
-}
-
-.budget-header .account .outcome .outcome-total small{
-    color: #ef0b0b;
-    font-family: 'Gilroy Bold';
-    font-size: 1rem;
 }
 
 /*/////////////   DASHBOARD    /////////////*/
@@ -164,7 +154,7 @@ input[type=number] {
     margin-left: 10px;
 }
 
-.active{
+.focus{
     opacity : 1 !important;
 }
 
@@ -226,7 +216,7 @@ input[type=number] {
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url('icon/delete-button.png');
+    background-image: url('icon/trash.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -235,7 +225,7 @@ input[type=number] {
 
 }
 .budget-dashboard #all ul.list li.expense{
-    color: #ef0b0b;
+    color: #f0624d;
 }
 
 /* //////// EXPENSE ////////// */
@@ -316,7 +306,7 @@ input[type=number] {
     margin-bottom: 10px;;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
-    color: #ef0b0b;
+    color: #f0624d;
 }
 
 .budget-dashboard #expense ul.list li #edit{
@@ -336,7 +326,7 @@ input[type=number] {
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url('icon/delete-button.png');
+    background-image: url('icon/trash.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
@@ -438,7 +428,7 @@ input[type=number] {
     height: 20px;
     right: 20px;
     cursor: pointer;
-    background-image: url('icon/delete-button.png');
+    background-image: url('icon/trash.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
